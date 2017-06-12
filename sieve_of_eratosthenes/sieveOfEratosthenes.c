@@ -20,7 +20,7 @@ void sieveOfEratosthenes(int n, bool *primes) {
 
 int main() {
 	int n, k;
-	scanf("%d", &n);
+	n = 100;
 	bool primes[n+1];
 	sieveOfEratosthenes(n, primes);
 	for (k = 2; k < n; k++) {

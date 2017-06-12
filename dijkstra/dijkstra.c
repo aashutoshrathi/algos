@@ -16,7 +16,7 @@
 int minimum_distance(const int min_distances[], const bool shortest_paths[]) {
 	int i;
 	int minimum = INFINITY, index;
-	for (int i = 0; i < VERTICES; ++i) {
+	for (i = 0; i < VERTICES; ++i) {
 		if (!shortest_paths[i] && min_distances[i] <= minimum) {
 			minimum = min_distances[i];
 			index = i;

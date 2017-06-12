@@ -30,8 +30,8 @@ int main() {
     // Maximum length of string should be 100 char long
     char str1[100];
     char str2[100];
-    scanf("%s", str1);
-    scanf("%s", str2);
+    strcpy(str1, "mathematicians study maths");
+    strcpy(str2, "people study matrix multiplication");
     printf("%d\n", longestCommonSubsequence(str1, str2));
     return 0;
 }

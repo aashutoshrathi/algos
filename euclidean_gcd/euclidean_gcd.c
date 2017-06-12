@@ -10,7 +10,7 @@ int euclidean_gcd_recursive(int first, int second) {
         if(second == 0)
             return first;                // First becomes gcd if second becomes zero
         else
-            return gcd_recursive(second, (first % second));
+            return euclidean_gcd_recursive(second, (first % second));
 }
 
 int euclidean_gcd(int first, int second) {
@@ -29,4 +29,5 @@ int main() {
         int answer_iterative = euclidean_gcd(first, second);
         printf("GCD of %d and %d is : %d by recursive algo.\n", first, second, answer_recursive);
         printf("GCD of %d and %d is : %d by iterative algo.\n", first, second, answer_iterative);
+        return 0;
 }
